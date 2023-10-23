@@ -18,6 +18,11 @@ public class MainApp{
     public static final ListarPaisesService listarPaisesService = new ListarPaisesService();
     public static final DeletarPaisesService deletarPaisesService = new DeletarPaisesService();
 
+    /**
+     * The main method of the application.
+     * It initializes the GUI by calling the telaApp method from the telas class and passing the "Menu" string as the title and the MenuPaises object's menuPanel as the content.
+     * @param args The command line arguments passed to the application.
+     */
     public static void main(String[] args) {
         telas.telaApp("Menu", new MenuPaises().getMenuPanel());
     }
